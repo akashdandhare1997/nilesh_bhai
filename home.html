@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Classic Exch 99</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+
+:root{
+    --primary:#0088cc;
+    --secondary:#2c3e50;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,body{
+    height:100%;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:linear-gradient(to bottom,#0d8fd4,#1f4f73);
+    display:flex;
+    flex-direction:column;
+}
+
+/* Logo */
+
+.logo{
+    text-align:center;
+    padding:15px 0 10px;
+}
+
+.logo img{
+    width:240px;
+    max-width:85%;
+    height:auto;
+}
+
+/* Main */
+
+.main-area{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+}
+
+/* Login Card */
+
+.login-card{
+    width:350px;
+    max-width:95%;
+    background:#f7f7f7;
+    border-radius:6px;
+    border:1px solid #d5d5d5;
+    box-shadow:0 0 15px rgba(255,255,255,.5);
+}
+
+.login-title{
+    text-align:center;
+    color:var(--primary);
+    font-size:22px;
+    padding:5px;
+}
+
+.form-area{
+    padding:15px;
+}
+
+.form-control{
+    height:40px;
+    background:#dfe5ee;
+    border-radius:0;
+    font-size:16px;
+}
+
+.input-group-text{
+    width:55px;
+    justify-content:center;
+    background:#ececec;
+    border-radius:0;
+}
+
+.btn-login{
+    width:100%;
+    height:40px;
+    border:none;
+    background:var(--primary);
+    color:#fff;
+    font-size:18px;
+    position:relative;
+    margin-bottom:10px;
+}
+
+.btn-login i{
+    position:absolute;
+    right:15px;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.btn-login:hover{
+    background:#0077b3;
+}
+
+.captcha{
+    text-align:center;
+    font-size:10px;
+}
+
+.apk{
+    text-align:center;
+    margin-top:5px;
+}
+
+.apk a{
+    text-decoration:none;
+    color:#1565ff;
+    font-size:15px;
+}
+
+/* Footer */
+
+.footer{
+    background:var(--primary);
+    color:#fff;
+    padding:18px 25px;
+}
+
+.footer a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.support{
+    text-align:center;
+    font-size:24px;
+    font-weight:bold;
+}
+
+@media(max-width:768px){
+
+    .logo img{
+        width:220px;
+    }
+
+    .support{
+        font-size:24px;
+        margin-top:10px;
+    }
+
+    .footer .col-md-3{
+        text-align:center !important;
+        margin-bottom:10px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="logo">
+    <img src="logo.png" alt="Classic Exch 99">
+</div>
+
+<div class="main-area">
+
+    <div class="login-card">
+
+        <div class="login-title">
+            Login <i class="fas fa-hand-point-down"></i>
+        </div>
+
+        <div class="form-area">
+
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Username">
+                <span class="input-group-text">
+                    <i class="fas fa-user"></i>
+                </span>
+            </div>
+
+            <div class="input-group mb-3">
+                <input type="password" class="form-control" placeholder="Password">
+                <span class="input-group-text">
+                    <i class="fas fa-key"></i>
+                </span>
+            </div>
+
+            <button class="btn-login">
+                Login
+                <i class="fas fa-sign-in-alt"></i>
+            </button>
+
+            <button class="btn-login">
+                Login with demo ID
+                <i class="fas fa-sign-in-alt"></i>
+            </button>
+
+            <div class="captcha">
+                This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
+            </div>
+
+            <div class="apk">
+                <a href="#">
+                    <i class="fab fa-android"></i>
+                    Download APK
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer class="footer">
+
+    <div class="container-fluid">
+
+        <div class="row align-items-center">
+
+            <div class="col-md-3 text-start">
+                <a href="#">Terms and Conditions</a>
+            </div>
+
+            <div class="col-md-3 text-start">
+                <a href="#">Responsible Gaming</a>
+            </div>
+
+            <div class="col-md-6">
+                <div class="support">
+                    24X7 Support
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+/* Custom styling to complement Bootstrap classes */
+
+body {
+    background-color: #121212 !important; /* Dark background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    background-color: #1e1e1e !important; /* Dark card background */
+    border-radius: 12px;
+}
+
+.form-control:focus {
+    background-color: #1a1a1a;
+    color: #fff;
+    border-color: #0dcaf0; /* Cyan border on focus */
+    box-shadow: 0 0 0 0.25rem rgba(13, 202, 240, 0.25);
+}
+
+.logo-img {
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.5));
+}
